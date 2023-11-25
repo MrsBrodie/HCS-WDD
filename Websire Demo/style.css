@@ -1,0 +1,161 @@
+body{
+  background-color: grey;
+  margin: auto;
+  }
+
+header,nav,main,section,footer{
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left:10px;
+  margin-bottom: 7px;
+  width:1100px;
+ 
+
+}
+header{
+  background-color: lightyellow;
+  height:50px;
+  text-align: center;}
+
+h1{
+  font-family: cursive;
+  color:blueviolet;
+ 
+   }
+
+nav{
+  background-color: lightblue;
+  height:100px;
+  
+  }
+
+nav ul {list-style-type:none}
+
+nav ul li {float:left;width:150px;text-align:center}
+
+nav ul li a {display:block;padding:15px;color:black}
+
+nav ul li a:hover {background-color:plum;color:purple}
+
+main{
+  background-color: lightpink;
+  height:1200px;
+  
+  }
+
+section{
+  background-color: yellowgreen;
+  height:300px;
+   
+  }
+
+footer{
+  background-color: lightyellow;
+  height:50px;
+  }
+
+.myDiv{
+  background-color:yellowgreen;
+  height: 300px;
+  
+}
+.myDiv2{
+  background-color:yellowgreen;
+  float: left;
+  
+}
+.myDiv3{
+  background-color:yellowgreen;
+}
+
+.myDiv4{
+  background-color:yellowgreen;
+}
+
+.sidebar{
+  background-color:red;
+  height:300px;
+  width:200px;
+  float: left;
+  
+}
+.widget{
+  background-color:grey;
+  height:100px;
+  width:100px;
+  float:right;
+  margin:auto;
+
+
+
+}
+.content{
+  background-color:blue;
+  width: 300px;
+  height:300px;
+  float:left;
+}
+
+
+
+.product1{
+  background-color:yellow;
+  height:300px;
+  width:200px;
+  float: left;
+ 
+}
+
+.product2{
+  background-color:orange;
+  height:300px;
+  width:150px;
+  float: left;
+}
+.product3{
+  background-color:purple;
+  height:300px;
+  width:150px;
+  float:left;
+}
+.product4{
+  background-color:lightgrey;
+  height:300px;
+  width:100px;
+  float: right;
+}
+
+#bath{
+  border-color: black;
+  border-radius: 10px;
+  border-style: dashed; 
+  }
+
+
+#smallDogs, #bigDogs, #uglyDogs{display:none}
+
+#intro{display:block;}
+
+#dog{
+  height:200px;
+  margin-top: 20px;
+  padding:20px;
+ 
+}
+
+.imageArea{
+  float:left;
+  height:100%;
+  }
+
+
+.textArea{
+  color:#000050;
+  padding:20px 20px 20px 20px;
+  }
+
+.thumb{
+  height:80px;
+  padding-right:10px;
+  
+}

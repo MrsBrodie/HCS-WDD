@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Demo Page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- showLarge is called onmouseout -->
+<script>
+function showLarge(thisGraphic) 
+    {thisGraphic.style.width='450px';
+    thisGraphic.style.height='180px';
+	thisGraphic.style.marginRight='5px';
+    thisGraphic.style.marginTop='5px'
+}
+
+<!-- showNormal is called onmouseout -->
+function showNormal(thisGraphic)
+    {thisGraphic.style.width='350px';
+    thisGraphic.style.height='100px';
+	thisGraphic.style.marginRight='30px';
+    thisGraphic.style.marginTop='30px';
+}
+
+function displayWispa(){
+  document.getElementById("intro").style.display="block";
+  document.getElementById("bigDogs").style.display="none";
+  document.getElementById("smallDogs").style.display="none";
+  document.getElementById("uglyDogs").style.display="none";
+}
+
+function displayBig(){
+  document.getElementById("intro").style.display="none";
+  document.getElementById("bigDogs").style.display="block";
+  document.getElementById("smallDogs").style.display="none";
+  document.getElementById("uglyDogs").style.display="none";
+
+}
+
+function displaySmall(){
+  document.getElementById("intro").style.display="none";
+  document.getElementById("bigDogs").style.display="none";
+  document.getElementById("smallDogs").style.display="block";
+  document.getElementById("uglyDogs").style.display="none";
+
+
+}
+function displayUgly(){
+  document.getElementById("intro").style.display="none";
+  document.getElementById("bigDogs").style.display="none";
+  document.getElementById("smallDogs").style.display="none";
+  document.getElementById("uglyDogs").style.display="block";
+
+}
+</script>
+
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <header>
+      <h1>So Fluffy! Dog Groomers</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="layout.html">Layout</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </nav>
+    <main>
+      <ul>
+        <li>Voted #1 by Dogue Magazine</li>
+        <li> 2021 Pet Groomer Winner</li>
+        <li> Wispa Certified</li>
+      </ul>
+      <section>
+        <section id="intro">
+        <div class="imageArea">
+          <img id="dog"  src="../Images/wispa.jpg" alt="Image of golden labrador with a mask in her mouth"> 
+        </div>
+        <div class="textArea">
+          <h3>This is a paragraph about Wispa </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis posuere massa, id pulvinar magna. Nullam consectetur varius enim a efficitur. Fusce pharetra sit amet ligula eu feugiat. Curabitur quis ultricies nibh. Aliquam lorem metus, consectetur in ligula vitae, posuere consectetur metus. Integer volutpat imperdiet sem sit amet convallis. Pellentesque elementum vulputate tempor. Suspendisse potenti. Nulla nulla risus, volutpat in tortor ut, tincidunt condimentum ante. </p>
+        </div>
+      </section>
+
+      <section id="bigDogs">
+        <div class="imageArea">
+          <img id="dog"  src="../Images/big.jpg" alt="Image of great dane on sofa with young girl"> 
+        </div>
+        <div class="textArea">
+          <h3>This is a paragraph about Great Danes</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis posuere massa, id pulvinar magna. Nullam consectetur varius enim a efficitur. Fusce pharetra sit amet ligula eu feugiat. Curabitur quis ultricies nibh.  </p>
+        </div>
+      </section>
+
+      <section id="smallDogs">
+        <div class="imageArea">
+          <img id="dog"  src="../Images/small.jpg" alt="Image of small dog  sitting on sofa "> 
+        </div>
+        <div class="textArea">
+          <h3>This is a paragraph about Yorkies </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis posuere massa, id pulvinar magna. Nullam consectetur varius enim a efficitur. Fusce pharetra sit amet ligula eu feugiat. Curabitur quis ultricies nibh. Aliquam lorem metus, consectetur in ligula vitae, posuere consectetur metus. Integer volutpat imperdiet sem sit amet convallis. Pellentesque elementum vulputate tempor.  </p>
+        </div>
+      </section>
+      
+      <section id="uglyDogs">
+        <div class="imageArea">
+          <img id="dog"  src="../Images/ugly.jpg" alt="Image of ugly groomed dog"> 
+        </div>
+        <div class="textArea">
+          <h3>This is a paragraph about Ugly Dogs </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis posuere massa, id pulvinar magna. Nullam consectetur varius enim a efficitur. Fusce pharetra sit amet ligula eu feugiat. Curabitur quis ultricies nibh. Aliquam lorem metus, consectetur in ligula vitae, posuere consectetur metus.  </p>
+        </div>
+       
+      </section>
+       <br>
+        <div id="selection">
+          <img class="thumb" src="../Images/wispa.jpg"
+          onclick="displayWispa()">
+          <img class="thumb" src="../Images/big.jpg" onclick="displayBig()">
+          <img class="thumb" src="../Images/small.jpg" onclick="displaySmall()">
+          <img class="thumb" src="../Images/ugly.jpg" onclick="displayUgly()">
+        </div>
+          
+
+   
+      <section>
+        <div class="myDiv4">
+        <img id="bath" src="../Images/dogbath.jpg" alt="Image of small dog in the bath"
+        onMouseOver="showLarge(this)" onMouseOut="showNormal(this)"> 
+        </div>
+      </section>
+      <section>
+        <div class="myDiv2">
+          <form>
+            <p>
+              <h2>Booking Form</h2>
+              <br>
+              Dog Name:<input type="text" size="10" name="Dog name">
+            <br>
+              Dog Breed: <input type="text" size="20" name="dog Breed">
+            
+            <br>
+             Contact Number: <input type="text"  name="contact" maxlength="10">
+             <br>
+            
+            <br>
+            <input type="radio" name="choice1" value="W">Wash
+            <input type="radio" name="choice1" value="WD">Wash & Blowdry
+            <input type="radio" name="choice1" value="WDS">Wash, Dry and Style
+            <input type="radio" name="choice1" value="MO">Total Makeover
+            <br>
+            <br>
+            Please select shampoo type
+            <select name="Shampoo">
+              <option  value="Normal">Normal</option>
+              <option  value="Organic">Organic</option>
+              <option  value="Designer">Designer</option>
+            </select>
+            <br>
+            <br>
+            Any other information
+            <textarea rows="2" cols="20">
+            </textarea>
+            <br>
+            <br>
+            <input type="submit" value="Click to submit">
+            </p>
+         </form>
+        </div>
+      </section>
+      
+
+
+    </main>
+    <footer>
+      Made by Mrs Brodie ©
+    </footer>
+
+  </body>
+</html>
