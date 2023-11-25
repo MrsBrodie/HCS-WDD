@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Donate</title>
+		<link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+	</head>
+	
+	<body>
+	
+		<header>
+			<img src="../images/banner.png">
+		</header>
+
+		<main id="donate">
+		
+		<div>
+			<h2> Donate to the zoo </h2>
+			<p><a href="animals.html">Go back to the animals page</a></p>
+				
+			<p>You can donate to the zoo by filling out the form below (your personal details will be transferred securely)</p>
+			
+			<h6>Fields marked * are required</h6>
+			<br>
+		
+			<form>
+
+				Forename*<br>
+				<input type="text" size="30" maxlength="20" required><br><br>
+				
+				Surname*<br>
+				<input type="text" size="30" maxlength="20" required><br><br>
+					
+				E-Mail address*<br>
+				(Confirmation of your donation will be sent to you)<br>
+				<input type="text" size="30" maxlength="20" required><br><br>
+				
+				Donation amount*<br>
+				(Choose one)<br>
+				<select id="donation" size="6" multiple>
+					<option value="100">£100</value>
+					<option value="50">£50</value>
+					<option value="25">£25</value>
+					<option value="20">£20</value>
+					<option value="15">£15</value>
+					<option value="10">£10</value>
+				</select><br><br>
+				
+				<!--<input type="radio" value="2.5" name="donate">   £2.50     
+				<input type="radio" value="5.0" name="donate" checked>   £5.00     
+				<input type="radio" value="other" name="donate">   Other     
+				£<input type="number" min="1.00"><br><br>-->
+					
+				Enter your bank card's 16 digit number*<br>
+				<input type="number" required><br><br>
+					
+				Enter your card's expiry date (MMYY)*<br>
+				<input type="number" min="0220" required><br><br>
+					
+				Enter the last 3 digits of your card's security code*<br>
+				<input type="number" min="000" max="999" required><br><br>
+					
+				<input type="submit" onclick="alert('Your donation has been submitted. Thank you.')" value="Donate!">
+					
+			</form> 
+		</div>
+		</main>
+				
+		<footer>
+			Contact us: 0192 611 5391     info@springfieldzoo.co.uk
+		</footer>
+	
+	</body>
+
+</html>
